@@ -1,0 +1,9 @@
+{
+    "ConsumerKey": "",
+    "ConsumerSecret": "",
+    "Preferences": {
+        "MaxHistory": 1000,
+        "MaxAge": 21,
+        "MaxSync": 100
+    }
+}
