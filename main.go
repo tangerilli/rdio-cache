@@ -178,7 +178,7 @@ func rankTracks(sources []rdio.HistorySource, maxAge int) []*RankedTrack {
 }
 
 func updateSyncList(c *rdio.Client, tracks []*RankedTrack, maxSync int) {
-	currentlySynced, err := c.GetOfflineTracks()
+	currentlySynced, err := c.GetOfflineTracks(0, 1000)
 	log.Printf("%d synced tracks\n", len(currentlySynced))
 	if err != nil {
 		log.Fatalf("Could not get offline tracks: %s\n", err.Error())
