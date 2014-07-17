@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"encoding/json"
-	"github.com/grantmd/go-rdio"
+	"github.com/tangerilli/go-rdio"
 	"log"
 	"os"
 	"sort"
