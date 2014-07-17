@@ -42,7 +42,7 @@ func loadConfig(path string) (*Config, error) {
 
 	cfgFile, err := os.Open(path)
 	if err != nil {
-		return nil, err
+		return &config, nil
 	}
 	defer cfgFile.Close()
 
